@@ -81,40 +81,40 @@ for data in train:
 
 
 # save dictionaries
-with open('sets/click.pkl','wb') as f:
+with open('./sets/click.pkl','wb') as f:
     pickle.dump(click,f)
 
-with open('sets/hour.pkl','wb') as f:
+with open('./sets/hour.pkl','wb') as f:
     pickle.dump(hour,f)
 
-with open('sets/C1.pkl','wb') as f:
+with open('./sets/C1.pkl','wb') as f:
     pickle.dump(C1,f)
 
-with open('sets/C15.pkl','wb') as f:
+with open('./sets/C15.pkl','wb') as f:
     pickle.dump(C15,f)
 
 with open('sets/C16.pkl','wb') as f:
     pickle.dump(C16,f)
 
-with open('sets/C18.pkl','wb') as f:
+with open('./sets/C18.pkl','wb') as f:
     pickle.dump(C18,f)
 
-with open('sets/C20.pkl','wb') as f:
+with open('./sets/C20.pkl','wb') as f:
     pickle.dump(C20,f)
 
-with open('sets/banner_pos.pkl','wb') as f:
+with open('./sets/banner_pos.pkl','wb') as f:
     pickle.dump(banner_pos,f)
 
-with open('sets/site_category.pkl','wb') as f:
+with open('./sets/site_category.pkl','wb') as f:
     pickle.dump(site_category,f)
 
-with open('sets/app_category.pkl','wb') as f:
+with open('./sets/app_category.pkl','wb') as f:
     pickle.dump(app_category,f)
 
-with open('sets/device_type.pkl','wb') as f:
+with open('./sets/device_type.pkl','wb') as f:
     pickle.dump(device_type,f)
 
-with open('sets/device_conn_type.pkl','wb') as f:
+with open('./sets/device_conn_type.pkl','wb') as f:
     pickle.dump(device_conn_type,f)
 
 print('...step1 end')
