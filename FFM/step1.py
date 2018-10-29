@@ -39,7 +39,9 @@ device_id = []
 
 
 
-train = pd.read_csv('/home/johnso/PycharmProjects/News_recommendation/CTR_prediction/avazu_CTR/train.csv',chunksize=10000)
+train = pd.read_csv('/data/barnett007/ctr-data/train.csv',chunksize=10000)
+
+print('start step1...')
 
 for data in train:
 
@@ -115,5 +117,5 @@ with open('sets/device_type.pkl','wb') as f:
 with open('sets/device_conn_type.pkl','wb') as f:
     pickle.dump(device_conn_type,f)
 
-
+print('...step1 end')
 
