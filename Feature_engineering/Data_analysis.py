@@ -21,6 +21,8 @@ device_model = dict()
 device_id = dict()
 device_ip = dict()
 
+print('start ....')
+
 count = 0
 for data in train:
     C14_list = data['C14'].values
@@ -217,3 +219,5 @@ with open('field2count/device_id.pkl','wb') as f:
 
 with open('field2count/device_ip.pkl','wb') as f:
     pickle.dump(device_ip,f)
+    
+print('...end.')
