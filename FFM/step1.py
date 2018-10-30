@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 import logging
 from collections import Counter
+from make_dir import create_folder_judge
 
 # for site_id, site_domain, app_id, app_domain, device_model,
 # device_ip, device_id fields,C14,C17,C19,C21, one-hot using frequency
@@ -37,7 +38,7 @@ device_model = []
 device_ip = []
 device_id = []
 
-
+create_folder_judge("tinymind")
 
 train = pd.read_csv('/data/barnett007/ctr-data/train.csv',chunksize=10000)
 
@@ -81,40 +82,40 @@ for data in train:
 
 
 # save dictionaries
-with open('/output/click.pkl','wb') as f:
+with open('/output/ffm/sets/click.pkl','wb') as f:
     pickle.dump(click,f)
 
-with open('/output/hour.pkl','wb') as f:
-    pickle.dump(hour,f)
+with open('/output/ffm/sets/hour.pkl','wb') as f:
+    pickle.dump(hours,f)
 
-with open('/output/C1.pkl','wb') as f:
+with open('/output/ffm/sets/C1.pkl','wb') as f:
     pickle.dump(C1,f)
 
-with open('/output/C15.pkl','wb') as f:
+with open('/output/ffm/sets/C15.pkl','wb') as f:
     pickle.dump(C15,f)
 
-with open('/output/C16.pkl','wb') as f:
+with open('/output/ffm/sets/C16.pkl','wb') as f:
     pickle.dump(C16,f)
 
-with open('/output/C18.pkl','wb') as f:
+with open('/output/ffm/sets/C18.pkl','wb') as f:
     pickle.dump(C18,f)
 
-with open('/output/C20.pkl','wb') as f:
+with open('/output/ffm/sets/C20.pkl','wb') as f:
     pickle.dump(C20,f)
 
-with open('/output/banner_pos.pkl','wb') as f:
+with open('/output/ffm/sets/banner_pos.pkl','wb') as f:
     pickle.dump(banner_pos,f)
 
-with open('/output/site_category.pkl','wb') as f:
+with open('/output/ffm/sets/site_category.pkl','wb') as f:
     pickle.dump(site_category,f)
 
-with open('/output/app_category.pkl','wb') as f:
+with open('/output/ffm/sets/app_category.pkl','wb') as f:
     pickle.dump(app_category,f)
 
-with open('/output/device_type.pkl','wb') as f:
+with open('/output/ffm/sets/device_type.pkl','wb') as f:
     pickle.dump(device_type,f)
 
-with open('/output/device_conn_type.pkl','wb') as f:
+with open('/output/ffm/sets/device_conn_type.pkl','wb') as f:
     pickle.dump(device_conn_type,f)
 
 print('...end.')
