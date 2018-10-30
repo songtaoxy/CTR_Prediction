@@ -189,35 +189,37 @@ for data in test:
 
 
 # save dictionaries
-with open('field2count/C14.pkl','wb') as f:
+with open('/output/C14.pkl','wb') as f:
     pickle.dump(C14,f)
 
-with open('field2count/C17.pkl','wb') as f:
+with open('/output/C17.pkl','wb') as f:
     pickle.dump(C17,f)
 
-with open('field2count/C19.pkl','wb') as f:
+with open('/output/C19.pkl','wb') as f:
     pickle.dump(C19,f)
 
-with open('field2count/C21.pkl','wb') as f:
+with open('/output/C21.pkl','wb') as f:
     pickle.dump(C21,f)
 
-with open('field2count/site_id.pkl','wb') as f:
+with open('/output/site_id.pkl','wb') as f:
     pickle.dump(site_id,f)
 
-with open('field2count/site_domain.pkl','wb') as f:
+with open('/output/site_domain.pkl','wb') as f:
     pickle.dump(site_domain,f)
 
-with open('field2count/app_id.pkl','wb') as f:
+with open('/output/app_id.pkl','wb') as f:
     pickle.dump(app_id,f)
 
-with open('field2count/app_domain.pkl','wb') as f:
+with open('/output/app_domain.pkl','wb') as f:
     pickle.dump(app_domain,f)
 
-with open('field2count/device_model.pkl','wb') as f:
+with open('/output/device_model.pkl','wb') as f:
     pickle.dump(device_model,f)
 
-with open('field2count/device_id.pkl','wb') as f:
+with open('/output/device_id.pkl','wb') as f:
     pickle.dump(device_id,f)
 
-with open('field2count/device_ip.pkl','wb') as f:
+with open('/output/device_ip.pkl','wb') as f:
     pickle.dump(device_ip,f)
+
+print('Data_analysis run end')
