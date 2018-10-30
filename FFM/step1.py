@@ -81,41 +81,42 @@ for data in train:
 
 
 # save dictionaries
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/click.pkl','wb') as f:
+with open('/output/click.pkl','wb') as f:
     pickle.dump(click,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/hour.pkl','wb') as f:
+with open('/output/hour.pkl','wb') as f:
     pickle.dump(hour,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/C1.pkl','wb') as f:
+with open('/output/C1.pkl','wb') as f:
     pickle.dump(C1,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/C15.pkl','wb') as f:
+with open('/output/C15.pkl','wb') as f:
     pickle.dump(C15,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/C16.pkl','wb') as f:
+with open('/output/C16.pkl','wb') as f:
     pickle.dump(C16,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/C18.pkl','wb') as f:
+with open('/output/C18.pkl','wb') as f:
     pickle.dump(C18,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/C20.pkl','wb') as f:
+with open('/output/C20.pkl','wb') as f:
     pickle.dump(C20,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/banner_pos.pkl','wb') as f:
+with open('/output/banner_pos.pkl','wb') as f:
     pickle.dump(banner_pos,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/site_category.pkl','wb') as f:
+with open('/output/site_category.pkl','wb') as f:
     pickle.dump(site_category,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/app_category.pkl','wb') as f:
+with open('/output/app_category.pkl','wb') as f:
     pickle.dump(app_category,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/device_type.pkl','wb') as f:
+with open('/output/device_type.pkl','wb') as f:
     pickle.dump(device_type,f)
 
-with open('/tinysrc/CTR-FM-FFM-DeepFM/FFM/sets/device_conn_type.pkl','wb') as f:
+with open('/output/device_conn_type.pkl','wb') as f:
     pickle.dump(device_conn_type,f)
 
-print('...step1 end')
+print('...end.')
+
 
